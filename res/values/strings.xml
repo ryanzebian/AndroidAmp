@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AndroidAmp3</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="tune">tune</string>
+    <string name="title_activity_guitar_tuner">GuitarTunerActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_guitar_effects">GuitarEffectsActivity</string>
+    <string name="Effect">Effect_button</string>
+    <string name="on">on</string>
+    <string name="none">none</string>
+    <string name="Fuzz">Fuzz</string>
+    <string name="eho">echo</string>
+    <string name="echo">echo</string>
+    <string name="title_activity_tremelo_effect">Tremelo_effect</string>
+    <string name="Tremelo">Tremelo</string>
+    <string name="Tremelo_effect">Tremelo_effect</string>
+    <string name="configure">configure</string>
+    <string name="rate">rate</string>
+    <string name="rate1">rate[0.5-25]:</string>
+    <string name="Shape">"Shape[1-20]: "</string>
+    <string name="depth">depth[0-0.5]</string>
+    <string name="title_activity_fuzz_effect">Fuzz_effect</string>
+    <string name="on_fuzz_effect">on</string>
+    <string name="radiobutton_fuzz">Fuzz</string>
+    <string name="fuzz_record_button">record</string>
+    <string name="stop_button_fuzz">stop</string>
+    <string name="recorder">recorder</string>
+    <string name="fuzzfile">fuzz</string>
+    <string name="record_tremelo">record_tremelo</string>
+    <string name="rec_tremelo">Record</string>
+    <string name="stop_tremelo">Stop</string>
+    <string name="tremlo_play">Tremelo</string>
+    <string name="tremelo_play">tremelo</string>
+    <string name="amplifytext">Amplify Value[40]:</string>
+    <string name="configure_fuzz">configure</string>
+    <string name="Configure_fuzz_effect">Confgure</string>
+    <string name="delayeffecg">DelayEffect</string>
+    <string name="title_activity_delay_effect">Delay_effect</string>
+    <string name="on_off_delay_effect_toggle_button">On</string>
+    <string name="record_delay_effect">Record</string>
+    <string name="stop_delay_effect_buton">Stop</string>
+    <string name="Phasor_radio_button">Phasor</string>
+    <string name="Phasor_effect">Phasor</string>
+    <string name="title_activity_phasor_effect">Phasor_effect</string>
+    <string name="title_activity_whaauto_effect">Whaauto_effect</string>
+
+</resources>

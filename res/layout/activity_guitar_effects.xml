@@ -1,0 +1,147 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${packageName}.${activityClass}" >
+
+    <ToggleButton
+        android:id="@+id/toggleButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="47dp"
+        android:layout_marginTop="104dp"
+        android:onClick="on_clicked"
+        android:text="@string/on" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/toggleButton1"
+        android:layout_marginLeft="24dp"
+        android:layout_toRightOf="@+id/toggleButton1" >
+
+        <RadioButton
+            android:id="@+id/radio0"
+            android:layout_width="141dp"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:onClick="RadioButtonClicked"
+            android:text="@string/none" />
+
+        <RadioButton
+            android:id="@+id/radio1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="RadioButtonClicked"
+            android:text="@string/Tremelo" />
+
+        <RadioButton
+            android:id="@+id/radio2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="RadioButtonClicked"
+            android:text="@string/radiobutton_fuzz" />
+
+        <RadioButton
+            android:id="@+id/radio3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="RadioButtonClicked"
+            android:text="@string/delayeffecg" />
+
+        <RadioButton
+            android:id="@+id/radio4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="RadioButtonClicked"
+            android:text="@string/Phasor_effect" />
+
+        <RadioButton
+            android:id="@+id/radio5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="RadioButtonClicked"
+            android:text="WhaAuto" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/Button01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button1"
+        android:layout_marginTop="14dp"
+        android:layout_toLeftOf="@+id/radioGroup1"
+        android:onClick="stopbuttonpressed"
+        android:text="stop" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Button01"
+        android:layout_below="@+id/toggleButton1"
+        android:onClick="playbuttonpressed"
+        android:text="Play" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/radioGroup2"
+        android:layout_below="@+id/radioGroup1"
+        android:layout_marginTop="14dp"
+        android:text="Play Audio:" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/radioGroup1"
+        android:layout_below="@+id/radioGroup1" >
+
+        <RadioButton
+            android:id="@+id/recorderfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="39dp"
+            android:onClick="playaudio"
+            android:text="@string/recorder" />
+
+        <RadioButton
+            android:id="@+id/delayfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="delay" />
+
+        <RadioButton
+            android:id="@+id/tremelofile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="playaudio"
+            android:text="@string/tremelo_play" />
+
+        <RadioButton
+            android:id="@+id/fuzzfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="playaudio"
+            android:text="@string/fuzzfile" />
+
+        <RadioButton
+            android:id="@+id/phasorfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="phasor" />
+
+        <RadioButton
+            android:id="@+id/Whaautofile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WhaAuto" />
+    </RadioGroup>
+
+</RelativeLayout>

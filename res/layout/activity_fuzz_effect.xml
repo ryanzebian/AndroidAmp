@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${packageName}.${activityClass}" >
+
+    <ToggleButton
+        android:id="@+id/toggleButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:text="@string/on_fuzz_effect"
+        android:onClick="on_clicked" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/button1"
+        android:text="@string/stop_button_fuzz"
+        android:onClick="stop" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/toggleButton1"
+        android:layout_marginTop="20dp"
+        android:text="@string/fuzz_record_button"
+        android:onClick="record" />
+
+    <EditText
+        android:id="@+id/amplifytextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button1"
+        android:layout_alignBottom="@+id/button1"
+        android:layout_marginLeft="60dp"
+        android:layout_toRightOf="@+id/button1"
+        android:ems="10"
+        android:inputType="number" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/amplifytextview"
+        android:layout_below="@+id/toggleButton1"
+        android:text="@string/amplifytext" />
+
+    <Button
+        android:id="@+id/configure_fuzz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/amplifytextview"
+        android:layout_below="@+id/button2"
+        android:layout_marginTop="16dp"
+        android:text="@string/Configure_fuzz_effect" 
+        android:onClick="configure"/>
+
+</RelativeLayout>

@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${packageName}.${activityClass}" >
+
+    <EditText
+        android:id="@+id/rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button1"
+        android:layout_below="@+id/button1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:inputType="numberDecimal" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="77dp"
+        android:onClick="configure"
+        android:text="@string/configure" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/rate"
+        android:layout_alignBottom="@+id/rate"
+        android:layout_toLeftOf="@+id/rate"
+        android:text="@string/rate1" />
+
+    <TextView
+        android:id="@+id/depth_phasor_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="14dp"
+        android:text="@string/Shape" />
+
+    <EditText
+        android:id="@+id/shape"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/depth_phasor_value"
+        android:layout_alignLeft="@+id/rate"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/depth_phasor_value"
+        android:layout_below="@+id/depth_phasor_value"
+        android:layout_marginTop="21dp"
+        android:text="@string/depth" />
+
+    <EditText
+        android:id="@+id/depth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignLeft="@+id/shape"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/configure_fuzz"
+        android:layout_alignBottom="@+id/configure_fuzz"
+        android:layout_centerHorizontal="true"
+        android:onClick="stopbuttonpressed"
+        android:text="@string/stop_tremelo" />
+
+    <Button
+        android:id="@+id/configure_fuzz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="22dp"
+        android:layout_toLeftOf="@+id/depth"
+        android:onClick="recordbuttonpressed"
+        android:text="@string/rec_tremelo" />
+
+</RelativeLayout>
